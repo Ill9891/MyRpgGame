@@ -4,3 +4,10 @@ C:\Users\illia.shapovalov\source\repos\MyRpgGame\MyRpgGame\bin\Debug\MyRpgGame.p
 C:\Users\illia.shapovalov\source\repos\MyRpgGame\MyRpgGame\obj\Debug\MyRpgGame.csproj.CoreCompileInputs.cache
 C:\Users\illia.shapovalov\source\repos\MyRpgGame\MyRpgGame\obj\Debug\MyRpgGame.exe
 C:\Users\illia.shapovalov\source\repos\MyRpgGame\MyRpgGame\obj\Debug\MyRpgGame.pdb
+D:\Programming\C#\MyRpgGame\bin\Debug\MyRpgGame.exe.config
+D:\Programming\C#\MyRpgGame\bin\Debug\MyRpgGame.exe
+D:\Programming\C#\MyRpgGame\bin\Debug\MyRpgGame.pdb
+D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.csprojAssemblyReference.cache
+D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.csproj.CoreCompileInputs.cache
+D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.exe
+D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.pdb
