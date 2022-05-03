@@ -18,8 +18,8 @@ namespace MyRpgGame.Enemy
         public void Show()
         {
             Console.WriteLine(name);
-            Console.WriteLine($"Урон - {damage}");
-            Console.WriteLine($"Описание - {description}");
+            Console.WriteLine($"Damage - {damage}");
+            Console.WriteLine($"Description - {description}");
         }
     }
 

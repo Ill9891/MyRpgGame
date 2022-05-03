@@ -13,12 +13,12 @@ namespace MyRpgGame.Player
         {
             var specs = listOfSpecs.GetSpecs();
 
-            Console.Write("Введите имя вашего персонажа и нажмите Enter: ");
+            Console.Write("Enter your character name and press Enter: ");
             string name = Console.ReadLine();
             Console.Clear();
 
             ChooseSpec:
-            Console.Write("Выберите класс вашего персонажа выбрав соответствующую цифру и нажмите Enter: \n");
+            Console.Write("Select your character class by selecting the appropriate number and press Enter: \n");
             for (int i = 0; i < specs.Count; i++)
             {
                 Console.WriteLine($"{i + 1} - {specs[i].SpecName}");
@@ -35,10 +35,10 @@ namespace MyRpgGame.Player
 
             player = new Character(name, specs[chosenSpec - 1]);
 
-            Console.WriteLine("Приветствуем тебя " + player.Name);
-            Console.WriteLine("В этой игре вы поочередно с врагом \"бросаете кубик\", значение могут выпасть от 1 до 10.");
-            Console.WriteLine("У вас имеется 10 пустых ячеек соотвественно. Если значение кубика совпадает с пустой ячейкой, то вы наносити свой базовый урон.");
-            Console.WriteLine("Если значение совпадает с ячейкой в которую вы поместили умение, то наносится урон от умения. Для продолжения нажмите любую клавишу.");
+            Console.WriteLine("We welcome you " + player.Name);
+            Console.WriteLine("In this game, you alternate with the enemy \"throw the die\", the value can fall from 1 to 10.");
+            Console.WriteLine("You have 10 empty cells, respectively. If the die value matches an empty cell, then you deal your base damage.");
+            Console.WriteLine("If the value matches the slot in which you placed the skill, then skill damage is dealt. Press any key to continue.");
             Console.ReadKey();
             Console.Clear();
 

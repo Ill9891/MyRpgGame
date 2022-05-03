@@ -13,7 +13,7 @@ namespace MyRpgGame.Player.Skills.ArcherSkills
         }
         public string Description()
         {
-            string desc = "Отравляете врага уменьшая его текущий урон в 2 раза";
+            string desc = "Poison an enemy, reducing its current damage by 2.";
             return desc;
         }
     }

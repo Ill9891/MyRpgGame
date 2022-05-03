@@ -16,7 +16,7 @@ namespace MyRpgGame.Player.Skills.WarriorSkills
 
         public string Description()
         {
-            string desc = "Добавляет 1 к защите до конца боя";
+            string desc = "Adds 1 defense until end of combat";
             return desc;
         }
     }

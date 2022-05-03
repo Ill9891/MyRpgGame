@@ -15,7 +15,7 @@ namespace MyRpgGame.Player.Skills.ArcherSkills
 
         public string Description()
         {
-            string desc = "Наносите урон мощнее базового";
+            string desc = "Deal more damage than base damage";
             return desc;
         }
     }

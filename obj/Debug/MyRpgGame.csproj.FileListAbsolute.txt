@@ -11,3 +11,14 @@ D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.csprojAssemblyReference.cache
 D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.csproj.CoreCompileInputs.cache
 D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.exe
 D:\Programming\C#\MyRpgGame\obj\Debug\MyRpgGame.pdb
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\bin\Debug\MyRpgGame.exe.config
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\bin\Debug\MyRpgGame.exe
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\bin\Debug\MyRpgGame.pdb
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.csproj.AssemblyReference.cache
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.csproj.CoreCompileInputs.cache
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.exe
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.pdb
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\bin\Debug\MyRpgGame.exe.manifest
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\bin\Debug\MyRpgGame.application
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.exe.manifest
+C:\Users\illia.shapovalov\source\repos\MyRpgGame\obj\Debug\MyRpgGame.application

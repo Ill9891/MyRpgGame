@@ -16,11 +16,11 @@ namespace MyRpgGame.Enemy
         public void Show()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Тип - {EnemyType}");
-            Console.WriteLine($"Имя - {Name}");
-            Console.WriteLine($"Уровень - {Lvl}");
-            Console.WriteLine($"Жизнь - {HP}");
-            Console.WriteLine($"Урон - {Damage}");
+            Console.WriteLine($"Type - {EnemyType}");
+            Console.WriteLine($"Name - {Name}");
+            Console.WriteLine($"Level - {Lvl}");
+            Console.WriteLine($"HP - {HP}");
+            Console.WriteLine($"Damage - {Damage}");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
     }

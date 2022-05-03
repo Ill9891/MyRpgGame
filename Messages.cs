@@ -25,7 +25,7 @@ namespace MyRpgGame
         public void ChooseLocation(Character player)
         {
             Label:
-            Console.WriteLine("Итак, выберите локацию куда бы вы хотели пойти, Лес под номером 1, Степи под номером 2.");
+            Console.WriteLine("So, choose the location where you would like to go, Forest number 1, Steppe number 2.");
             var loc = Console.ReadLine();
             if (loc == "1")
             {
@@ -37,7 +37,7 @@ namespace MyRpgGame
             }
             else
             {
-                Console.WriteLine("Вы нажали не верную клавишу");
+                Console.WriteLine("You pressed the wrong key");
                 Console.ReadKey();
                 Console.Clear();
                 goto Label;
@@ -52,7 +52,7 @@ namespace MyRpgGame
             Console.ForegroundColor = ConsoleColor.Gray;
 
             ChooseSkill:
-            Console.WriteLine("\nВыберите умение нажав соответствующую цифру:");
+            Console.WriteLine("\nSelect a skill by entering the appropriate number:");
             var skills = skill.GetSkill(player);
             choosenSkill = Convert.ToInt32(Console.ReadLine()) - 1;
             Console.Clear();
@@ -61,7 +61,7 @@ namespace MyRpgGame
                 goto ChooseSkill;
 
             ChooseCell:
-            Console.WriteLine("Расположите умение в ячейку, выберите номер от 1 до 10:");
+            Console.WriteLine("Place the skill in a cell, select a number from 1 to 10:");
             choosenCell = Convert.ToInt32(Console.ReadLine()) - 1;
             Console.Clear();
 
@@ -87,7 +87,7 @@ namespace MyRpgGame
                 enemy = elfFactory.CreateElf(randomEnemy);
             }
 
-            Console.WriteLine("Против вас:\n");
+            Console.WriteLine("Against you:\n");
             enemy.Show();
         }
 
@@ -98,16 +98,16 @@ namespace MyRpgGame
                 Label:
                 player.Show();
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(player.SkillCells[choosenCell].Name + " в ячейке номер " + (choosenCell + 1) + " с уроном " + player.SkillCells[choosenCell].Damage);
+                Console.WriteLine(player.SkillCells[choosenCell].Name + " in cell number " + (choosenCell + 1) + " with damage " + player.SkillCells[choosenCell].Damage);
                 Console.ForegroundColor = ConsoleColor.Gray;
-                Console.WriteLine("\nпротив\n");
+                Console.WriteLine("\nagainst\n");
 
                 enemy.Show();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(enemy.battleCells[randomEnemy].name + " в ячейке номер " + (randomEnemy) + " с уроном " + enemy.battleCells[randomEnemy].damage);
+                Console.WriteLine(enemy.battleCells[randomEnemy].name + " in cell number " + (randomEnemy) + " with damage " + enemy.battleCells[randomEnemy].damage);
                 Console.ForegroundColor = ConsoleColor.Gray;
 
-                Console.WriteLine("\nНажмите клавишу R на английской раскладке что бы совершить бросок кубика. ");
+                Console.WriteLine("\nPress the R key to roll the die. ");
 
                 string rollDice = Console.ReadLine();
                 if (rollDice == "r" || rollDice == "R")
@@ -116,39 +116,39 @@ namespace MyRpgGame
 
                     Console.Clear();
                     Thread.Sleep(1000);
-                    Console.WriteLine("Вы выкинули " + roll);
+                    Console.WriteLine("You have rolled " + roll);
                     if (player.SkillCells[roll - 1] == null)
                     {
                         enemy.HP -= player.Damage;
-                        Console.WriteLine("\nВы нанесли врагу " + player.Damage + " урона!");
+                        Console.WriteLine("\nYou have dealt " + player.Damage + " damage to the enemy!");
                     }
                     else
                     {
                         player.SkillCells[roll - 1].Execute(player, enemy);
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("\nВы нанесли врагу " + player.SkillCells[roll - 1].Damage + " урона с помощью " + player.SkillCells[roll - 1].Name);
+                        Console.WriteLine("\nYou have dealt " + player.SkillCells[roll - 1].Damage + " damage to the enemy with " + player.SkillCells[roll - 1].Name);
                         Console.ForegroundColor = ConsoleColor.Gray;
                     }
 
                     Thread.Sleep(1000);
-                    Console.WriteLine("\nБросает враг...\n");
+                    Console.WriteLine("\nEnemy is rolling...\n");
                     roll = random.Next(1, 11);
                     Thread.Sleep(1000);
-                    Console.WriteLine("Враг выкинул " + roll);
+                    Console.WriteLine("Enemy has rolled " + roll);
                     if (enemy.battleCells[roll - 1] == null)
                     {
                         player.HP -= enemy.Damage;
-                        Console.WriteLine("\nВраг нанес вам " + enemy.Damage + " урона!");
+                        Console.WriteLine("\nEnemy has dealt " + enemy.Damage + " damage to you!");
                     }
                     else
                     {
                         player.HP -= enemy.battleCells[roll - 1].damage;
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\nВраг нанес вам " + enemy.battleCells[roll - 1].damage + " урона с помощью " + enemy.battleCells[roll - 1].name);
+                        Console.WriteLine("\nEnemy has dealt " + enemy.battleCells[roll - 1].damage + " damage to you with " + enemy.battleCells[roll - 1].name);
                         Console.ForegroundColor = ConsoleColor.Gray;
                     }
 
-                    Console.WriteLine("\nНажмите любую клавишу для продолжения");
+                    Console.WriteLine("\nPress any key to continue");
                     Console.ReadKey();
                     Console.Clear();
 
@@ -167,7 +167,7 @@ namespace MyRpgGame
 
             if (enemy.HP <= 0 && player.HP > 0)
             {
-                Console.WriteLine("Вы победили!");
+                Console.WriteLine("You won!");
 
                 player.Experience += enemy.Experience;
 
@@ -177,7 +177,7 @@ namespace MyRpgGame
             }
             else if (player.HP <= 0 && enemy.HP > 0)
             {
-                Console.WriteLine("Вы проиграли!");
+                Console.WriteLine("You lost!");
 
                 player.HP = player.CurrentHP;
                 player.Armor = player.CurrentArmor;
@@ -185,7 +185,7 @@ namespace MyRpgGame
             }
             else
             {
-                Console.WriteLine("Ничья!");
+                Console.WriteLine("Tie!");
 
                 player.HP = player.CurrentHP;
                 player.Armor = player.CurrentArmor;

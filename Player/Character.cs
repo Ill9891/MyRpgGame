@@ -40,12 +40,12 @@ namespace MyRpgGame.Player
         public void Show()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Имя - {Name}");
-            Console.WriteLine($"Жизнь - {HP}");
-            Console.WriteLine($"Броня - {Armor}");
-            Console.WriteLine($"Урон - {Damage}");
-            Console.WriteLine($"Локацuя - {Location}");
-            Console.WriteLine($"Опыт - {Experience}");
+            Console.WriteLine($"Name - {Name}");
+            Console.WriteLine($"HP - {HP}");
+            Console.WriteLine($"Armor - {Armor}");
+            Console.WriteLine($"Damage - {Damage}");
+            Console.WriteLine($"Location - {Location}");
+            Console.WriteLine($"Exp - {Experience}");
             Console.ForegroundColor = ConsoleColor.Gray;
         }
     }

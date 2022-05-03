@@ -15,7 +15,7 @@ namespace MyRpgGame.Player.Skills.WarriorSkills
 
         public string Description()
         {
-            string desc = "Наносите урон в 2 раза мощнее обычного";
+            string desc = "Deal 2 times more damage than usual";
             return desc;
         }
 
